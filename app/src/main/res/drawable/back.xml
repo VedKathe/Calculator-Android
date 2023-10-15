@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"  >
+            <solid android:color="#492115" />
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <item>
+        <!-- create gradient you want to use with the angle you want to use -->
+        <rotate
+            android:fromDegrees="90"
+            android:toDegrees="45"
+            android:pivotX="99%"
+            android:pivotY="1%" >
+            <shape
+                android:shape="rectangle" >
+                <stroke android:color="@color/black" android:width="10dp"/>
+                <solid
+                    android:color="@color/black" />
+                <corners android:radius="5dp"></corners>
+            </shape>
+        </rotate>
+    </item>
+    <!-- create the stroke for top, left, bottom and right with the dp you want -->
+    <item>
+        <!-- create gradient you want to use with the angle you want to use -->
+        <rotate
+            android:fromDegrees="90"
+            android:toDegrees="90"
+            android:pivotX="1%"
+            android:pivotY="1%" >
+            <shape
+                android:shape="rectangle" >
+                <stroke android:color="@color/black" android:width="10dp"/>
+                <solid
+                    android:color="@color/black" />
+                <corners android:radius="5dp"></corners>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>
