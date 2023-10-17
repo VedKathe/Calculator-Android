@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="215dp"
             android:layout_gravity="center_horizontal"
-            android:background="#e5e5e5">
+            android:background="@drawable/back5">
 
             <!--TextView
                 android:id="@+id/textView2"
@@ -46,11 +46,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="205dp"
+                android:layout_marginStart="200dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginBottom="141dp"
-                android:background="@drawable/back"
+                android:background="@drawable/back6"
                 android:padding="3dp">
 
                 <EditText
@@ -59,11 +59,14 @@
                     android:layout_height="0dp"
                     android:background="@drawable/back2"
                     android:ems="10"
+                    android:fontFamily="@font/seven_segment"
                     android:gravity="right|center_vertical"
-                    android:hint="00"
+
                     android:inputType="numberDecimal"
                     android:padding="5dp"
-                    android:textSize="20sp"
+                    android:text="00"
+                    android:textColor="#a69285"
+                    android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -78,9 +81,9 @@
                 android:layout_alignParentLeft="false"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
                 android:background="@drawable/back"
                 android:padding="3dp">
 
@@ -89,17 +92,64 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/back3"
-                    android:gravity="right|center_vertical"
-                    android:hint="0"
-                    android:padding="15dp"
-                    android:textSize="40sp"
 
+                    android:fontFamily="@font/seven_segment"
+                    android:gravity="right|center_vertical"
+
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="44sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="KALC-01"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="serif"
+                android:text="EM2-350"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toStartOf="@+id/textView3"
+                android:fontFamily="serif"
+                android:text="EQUMATE"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
 
             <!--TextView
@@ -120,7 +170,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/back4">
+            android:background="@drawable/back4"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <GridLayout
                 android:id="@+id/GridLayout1"
@@ -138,357 +190,394 @@
                 tools:context=".GridXMLActivity">
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_ac"
-                    style="@style/Widget.AppCompat.Button"
+
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button1"
+                    android:backgroundTintMode="add"
+                    android:foregroundTint="#000000"
+                    android:foregroundTintMode="add"
                     android:text="AC"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_ce"
-                    style="@style/Widget.AppCompat.Button"
+
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button1"
                     android:text="CE"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_sqrroot"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:text="_"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
+                    android:text="@string/srqroot"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_percent"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
                     android:text="%"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_mc"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button2"
                     android:text="MC"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_MR"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button2"
                     android:text="MR"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_not"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
                     android:text="+/-"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_divide"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:text="/"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
+                    android:text="@string/divide"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_Mminus"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button2"
                     android:text="M-"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_Mplus"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button2"
                     android:text="M+"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_MU"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button2"
+                    android:padding="0dp"
                     android:text="MU"
-                    android:textSize="18sp" />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_multiple"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
                     android:text="x"
+                    android:textAllCaps="false"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_7"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
+
                     android:text="7"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_8"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="8"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_9"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="9"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_minus"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
                     android:text="-"
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_4"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="4"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_5"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="5"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_6"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="6"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_plus"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="155dp"
+                    android:layout_height="145dp"
                     android:layout_rowSpan="2"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button5"
                     android:text="+"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_1"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="1"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_2"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="2"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_3"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="3"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_zero"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="0"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_zerozero"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="00"
+                    android:textColor="#535352"
                     android:textSize="20sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_decimal"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button3"
                     android:text="."
-                    android:textSize="20sp" />
+                    android:textColor="#535352"
+                    android:textSize="22sp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_equal"
-                    style="@style/Widget.AppCompat.Button"
                     android:layout_width="80dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_margin="4dp"
                     android:layout_marginStart="1dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginEnd="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/back_button4"
                     android:text="="
+                    android:textColor="#707070"
                     android:textSize="20sp" />
 
             </GridLayout>
