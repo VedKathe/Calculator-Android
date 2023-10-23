@@ -44,7 +44,6 @@
                 android:layout_height="55dp"
                 android:layout_alignWithParentIfMissing="false"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="false"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
@@ -72,7 +71,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:importantForAutofill="no" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -80,7 +80,6 @@
                 android:layout_height="90dp"
                 android:layout_alignWithParentIfMissing="false"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="false"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="30dp"
@@ -107,6 +106,19 @@
                     android:textSize="44sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/opration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -225,7 +237,7 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/back_button1"
                     android:text="CE"
-                    android:textColor="@color/white"
+                    android:textColor="#5D4037"
                     android:textSize="20sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -351,7 +363,7 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/back_button2"
                     android:padding="0dp"
-                    android:text="MU"
+                    android:text="MS"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
