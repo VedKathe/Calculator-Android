@@ -20,3 +20,16 @@ The Retro Calculator App is a delightful homage to the vintage calculators of ye
 4. **Enjoy Calculating:** Dive into the world of retro-inspired calculations and enjoy the simplicity of the interface while handling your mathematical tasks.
 
 
+## Want to Contribute?
+
+We welcome contributions from developers of all levels! Whether you're fixing a bug, improving the documentation, or adding new features, your help is invaluable.
+
+1. **Fork the Repository:** Click on the 'Fork' button on the top right corner of this page.
+2. **Clone Your Fork:** Clone the repository to your local machine with `git clone [your-fork-url]`.
+3. **Create a New Branch:** Switch to a new branch for your contribution with `git checkout -b feature/new-feature`.
+4. **Make Changes:** Make your desired changes and improvements within the codebase.
+5. **Commit Changes:** Commit your changes with a descriptive commit message `git commit -m 'Add new feature: your-feature-name'`.
+6. **Push Changes:** Push your changes to your forked repository with `git push origin feature/new-feature`.
+7. **Create a Pull Request:** Go back to this repository on GitHub and click on the 'New Pull Request' button. Describe your changes and submit the pull request.
+
+We appreciate your effort and time! Let's make this project amazing together! 🌟
