@@ -12,6 +12,10 @@ The Retro Calculator App is a delightful homage to the vintage calculators of ye
 - **Advanced Functions:** Perform basic arithmetic operations effortlessly and utilize advanced features such as memory functions (M+, M-, MC, MR, MS), percentage calculations (%), and square root calculations.
 - **Intuitive User Experience:** Experience smooth and intuitive navigation, making mathematical tasks a breeze for users of all levels.
 
+## Output
+
+![Retro Calculator](https://cdn.discordapp.com/attachments/860584396263260200/1167037461487165450/Screenshot_20231022_115924_Calculator.jpg?ex=654cab55&is=653a3655&hm=5184a486c041f59d9d034b82364b483dd5cab3edf23e2485d717b4fde3ab9f2f&)
+
 ## How to Use
 
 1. **Clone the Repository:** Start by cloning the repository to your local machine using the command `git clone [repo-link]`.
@@ -32,4 +36,3 @@ We welcome contributions from developers of all levels! Whether you're fixing a 
 6. **Push Changes:** Push your changes to your forked repository with `git push origin feature/new-feature`.
 7. **Create a Pull Request:** Go back to this repository on GitHub and click on the 'New Pull Request' button. Describe your changes and submit the pull request.
 
-![Retro Calculator](https://cdn.discordapp.com/attachments/860584396263260200/1167037461487165450/Screenshot_20231022_115924_Calculator.jpg?ex=654cab55&is=653a3655&hm=5184a486c041f59d9d034b82364b483dd5cab3edf23e2485d717b4fde3ab9f2f&)
