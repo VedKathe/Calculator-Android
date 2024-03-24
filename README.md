@@ -14,7 +14,7 @@ The Retro Calculator App is a delightful homage to the vintage calculators of ye
 
 ## Output
 
-![Retro Calculator](https://cdn.discordapp.com/attachments/860584396263260200/1167037461487165450/Screenshot_20231022_115924_Calculator.jpg?ex=654cab55&is=653a3655&hm=5184a486c041f59d9d034b82364b483dd5cab3edf23e2485d717b4fde3ab9f2f&)
+![Retro Calculator](https://github.com/VedKathe/Calculator-Android/blob/main/Screenshot%202023-10-23%20213741.png)
 
 ## How to Use
 
