@@ -1,7 +1,5 @@
 # Retro Calculator App
 
-Welcome to the Retro Calculator App repository, where nostalgia meets innovation in the world of digital calculation!
-
 ## Overview
 
 The Retro Calculator App is a delightful homage to the vintage calculators of yesteryears, seamlessly blending classic design with powerful modern functionalities. With a visually appealing user interface reminiscent of retro calculators, this app brings a touch of old-world charm to the digital age.
